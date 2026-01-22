@@ -1,11 +1,11 @@
 // import React from 'react'
 import Footer from '../Layout/Footer'
-import Navbar from '../Layout/Navbar'
+// import Navbar from '../Layout/Navbar'
 
 const HomePage = () => {
     return (
         <>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className='mt-6'>
         <Footer/>
         </div>

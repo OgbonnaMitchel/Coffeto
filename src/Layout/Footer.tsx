@@ -7,26 +7,26 @@ import Footerbg from "../assets/images/Footer-Coffee-Bg.png"
 
 const Footer = () => {
   return (
-    <div className="bg-[#492D26] rounded-t-[60px] text-white px-45 pt-24 pb-12 "  style={{ backgroundImage: `url(${Footerbg})`}}>
-      <div className="flex justify-between  ">
-        <div>
-          <img src={Logo} alt="CoffeeLogo" className="mb-4"/>
-          <p className= "text-2xl font-medium pacifco">Sign up for our newsletter</p>
+    <div className="bg-[#492D26] rounded-t-4xl px-6 pt-12 pb-8  lg:rounded-t-[60px] px-20 text-white xl:px-30 pt-24 pb-12"  style={{ backgroundImage: `url(${Footerbg})`}}>
+      <div className="flex  flex-col items-center lg:flex-row justify-between ">
+        <div className="">
+          <img src={Logo} alt="CoffeeLogo" className="mb-4 mx-auto lg:mx-0"/>
+          <p className= "text-2xl font-medium pacifco mb-12 lg:text-4xl">Sign up for our newsletter</p>
         </div>
         <div>
-          <form action="">
-            <input type="email" placeholder="Enter e-mail address" />
-            <button>
+          <form action="" className="flex flex-col gap-4 text-center items-center">
+            <input type="email" placeholder="Enter e-mail address" className="border-2 border-[#5B4C48] rounded-[64px] outline-0 text-[#847571] font-medium text-sm w-2xs py-4 px-6 lg:w-xs " />
+            <button className=" flex items-center gap-2 w-2xs bg-[#DDB66F] justify-center px-4 py-4 rounded-[64px] font-semibold text-sm text-black lg:w-xs ">
               Subscribe
               <span>
                 <img src={Arrowright} alt="right-arrow" />
               </span>
             </button>
-            <p>We care about your data. Read our <span>Privacy Policy</span> </p>
+            <p className="text-xs font-normal ">We care about your data. Read our <span className="text-[#DDB66F] ">Privacy Policy</span> </p>
           </form>
               </div>
       </div>
-              <div>
+              <div className="flex justify-center gap-8 my-12">
                   <a href="www.facebook.com">
                   <img src={Facebook} alt="facebook icon" />
                   </a>
@@ -37,8 +37,8 @@ const Footer = () => {
                   <img src={Twitter} alt="" />  
                   </a>
               </div>
-              <div>
-                <p>Copyright Coffeto.com. All rights reserved</p>
+              <div className="text-center text-xs text-[#847571] ">
+                <p> &copy; Copyright Coffeto.com. All rights reserved</p>
               </div>
     </div>
   );
