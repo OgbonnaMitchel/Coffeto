@@ -63,7 +63,7 @@ const LoginForm = () => {
         >
           Login
           <span>
-            <img src={Login} alt="login icon" className="w-[16px] h-[16px]" />
+            <img src={Login} alt="login icon" className="w-4 h-4" />
           </span>
         </button>
       </form>

@@ -4,14 +4,15 @@ import Instagram from "../assets/images/Instagram.png";
 import Arrowright from "../assets/images/Arrow-Down.png";
 import Logo from "../assets/images/Header logo.png";
 import Footerbg from "../assets/images/Footer-Coffee-Bg.png"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#492D26] rounded-t-4xl px-6 pt-12 pb-8  lg:rounded-t-[60px] px-20 text-white xl:px-30 pt-24 pb-12"  style={{ backgroundImage: `url(${Footerbg})`}}>
+    <div className="bg-[#2B1712] absolute left-0 right-0 top-[2170px] rounded-t-[56px] px-6 pt-12 pb-8  lg:rounded-t-[100px] lg:px-20 text-white xl:px-30 xl:pt-24 xl:pb-12"  style={{ backgroundImage: `url(${Footerbg})`}}>
       <div className="flex  flex-col items-center lg:flex-row justify-between ">
-        <div className="">
-          <img src={Logo} alt="CoffeeLogo" className="mb-4 mx-auto lg:mx-0"/>
-          <p className= "text-2xl font-medium pacifco mb-12 lg:text-4xl">Sign up for our newsletter</p>
+        <div className="text-center lg:text-left">
+          <Link to="/"><img src={Logo} alt="CoffeeLogo" className="mb-4 mx-auto lg:mx-0"/> </Link>
+          <p className= "text-3xl font-medium pacifco mb-12 lg:text-4xl ">Sign up for our newsletter</p>
         </div>
         <div>
           <form action="" className="flex flex-col gap-4 text-center items-center">
@@ -26,7 +27,7 @@ const Footer = () => {
           </form>
               </div>
       </div>
-              <div className="flex justify-center gap-8 my-12">
+              <div className="flex justify-center gap-8 my-20">
                   <a href="www.facebook.com">
                   <img src={Facebook} alt="facebook icon" />
                   </a>
